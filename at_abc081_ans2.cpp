@@ -9,11 +9,10 @@ int main()
   int dmin = 100;
   cin >> N;
   for(int i = 0; i < N; ++i) {
-    int A;
-    cin >> A;
+    cin >> A[i];
     int d = 0;
-    while(A % 2 == 0) {
-      A /= 2;
+    while(A[i] % 2 == 0) {
+      A[i] /= 2;
       ++d;
     }
     dmin = min(dmin, d);
