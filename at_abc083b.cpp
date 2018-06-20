@@ -8,18 +8,18 @@ int main(){
 
   int sum = 0;
   int ans = 0;
-
-  for(int i = 0; i <= n; i++){
+  int x;
+  for(int i = 1; i <= n; i++){
+    sum = 0;
     cout << i << endl;
-  while(true){
-    sum = sum + i%10;
-    i = 1/10;
-    i = 0;
-    if(i == 0) break;
-    return 0;
+    x = i;
+  while(x > 0){
+    sum = sum + x%10;
+    x /= 10;
   }
 cout << sum << endl;
-  if(a <= sum && sum >= b) ans = ans + sum;
+  if(sum >= a && sum <= b) ans = ans + i;
+  cout << ans << endl;
 }
   cout << ans << endl;
 }
