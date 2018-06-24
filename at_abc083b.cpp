@@ -11,15 +11,15 @@ int main(){
   int x;
   for(int i = 1; i <= n; i++){
     sum = 0;
-    cout << i << endl;
+
     x = i;
-  while(x > 0){
-    sum = sum + x%10;
-    x /= 10;
+    while(x > 0){
+      sum = sum + x%10;
+      x /= 10;
+    }
+
+    if(sum >= a && sum <= b) ans = ans + i;
+
   }
-cout << sum << endl;
-  if(sum >= a && sum <= b) ans = ans + i;
-  cout << ans << endl;
-}
   cout << ans << endl;
 }
